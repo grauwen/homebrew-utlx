@@ -1,13 +1,13 @@
 class Utlx < Formula
   desc "Format-agnostic functional transformation language - converts between XML, JSON, CSV, YAML, and more"
   homepage "https://github.com/grauwen/utl-x"
-  version "1.0.0"
+  version "1.0.1"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/grauwen/utl-x/releases/download/v1.0.0/utlx-macos-arm64.bin"
-      sha256 "743c1aeb8968461d548cef69a6909f46e0b3cd8ed156f1bbf06d2ef202a7cdec"
+      url "https://github.com/grauwen/utl-x/releases/download/v1.0.1/utlx-macos-arm64.bin"
+      sha256 "0e3f6569ef3bce9030db41be3d9bcc2865a69169880eea8bff92413c0abd32bd"
 
       def install
         bin.install "utlx-macos-arm64.bin" => "utlx"
@@ -17,8 +17,8 @@ class Utlx < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/grauwen/utl-x/releases/download/v1.0.0/utlx-linux-x64.bin"
-      sha256 "50fc161a772ea546a5cf789a069ad580ed35db5a6c3a2aacdd1efd9f13facd58"
+      url "https://github.com/grauwen/utl-x/releases/download/v1.0.1/utlx-linux-x64.bin"
+      sha256 "48d4030c4999152df0fde0efdeda87f0b4f9e651d49b5db7f48e6532e9f4f2b1"
 
       def install
         bin.install "utlx-linux-x64.bin" => "utlx"
@@ -27,6 +27,6 @@ class Utlx < Formula
   end
 
   test do
-    assert_match "UTL-X CLI v1.0.0", shell_output("#{bin}/utlx --version")
+    assert_match "UTL-X CLI v1.0.1", shell_output("#{bin}/utlx --version")
   end
 end
