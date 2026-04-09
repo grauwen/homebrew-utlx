@@ -7,7 +7,7 @@ class Utlx < Formula
   on_macos do
     on_arm do
       url "https://github.com/grauwen/utl-x/releases/download/v1.0.1/utlx-macos-arm64.bin"
-      sha256 "0e3f6569ef3bce9030db41be3d9bcc2865a69169880eea8bff92413c0abd32bd"
+      sha256 "2d103cd4cbf11e472a79ee6ff09024cef6c0ef2aaa3088b0cb793162abee3a0a"
 
       def install
         bin.install "utlx-macos-arm64.bin" => "utlx"
@@ -18,7 +18,7 @@ class Utlx < Formula
   on_linux do
     on_intel do
       url "https://github.com/grauwen/utl-x/releases/download/v1.0.1/utlx-linux-x64.bin"
-      sha256 "48d4030c4999152df0fde0efdeda87f0b4f9e651d49b5db7f48e6532e9f4f2b1"
+      sha256 "d4f269a25af625c767adf6d101c2b9a943bcce2e5e463de8fd8ab657bc5ce5ba"
 
       def install
         bin.install "utlx-linux-x64.bin" => "utlx"
